@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/aatmanirbharscore">
+
+        <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerInParent="true"
+                android:indeterminate="false"
+                android:layout_marginTop="30dp"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/custom_progressbar_drawable"
+                android:secondaryProgress="0"/>
+
+
+        <TextView
+                android:id="@+id/txtProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/progressBar"
+                android:layout_centerInParent="true"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+    </RelativeLayout>
+
+    <com.aatmanirbhar.bharat.TypefacedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aatmanirbharscore"
+            android:text="Your Aatmanirbhar Score"
+            android:id="@+id/txtAatmaNirbhar"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+    />
+    <com.aatmanirbhar.bharat.TypefacedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtdescription"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_horizontal"
+            android:textSize="14sp"
+            android:lineSpacingExtra="7sp"
+            android:text="*Aatmanirbhar Score is a measure indicating your love for Indian apps. Best Aatmanirbhar Score is 100%."
+            android:layout_below="@+id/txtAatmaNirbhar"
+    />
+    <View android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_below="@+id/txtdescription"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"
+          android:layout_marginTop="20dp"
+          android:background="#e1e1e1"
+    />
+</RelativeLayout>

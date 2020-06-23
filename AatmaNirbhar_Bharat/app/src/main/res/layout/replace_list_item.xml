@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical">
+    <ImageView android:layout_width="100dp"
+               android:layout_height="100dp"
+               android:id="@+id/replaceImage"/>
+    <com.aatmanirbhar.bharat.TypefacedTextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/replaceImage"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="hello hello hel"
+            app:typeface="@string/Calibri"
+            android:layout_marginTop="10dp"
+            android:id="@+id/replacename"/>
+</RelativeLayout>

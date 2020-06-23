@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_width="90dp"
+               android:layout_height="90dp"
+               android:layout_marginTop="20dp"
+               android:layout_marginLeft="20dp"
+               android:id="@+id/appimage"/>
+    <com.aatmanirbhar.bharat.TypefacedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:typeface="@string/Calibri"
+            android:layout_toRightOf="@+id/appimage"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/appname"
+            android:textSize="20dp"
+            android:text="ShareIt"/>
+    <com.aatmanirbhar.bharat.TypefacedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Uninstall"
+            android:id="@+id/uninstall"
+            android:paddingTop="10dp"
+            app:typeface="@string/Calibri"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingRight="5dp"
+            android:background="@drawable/bttn_bg"
+            android:textColor="@color/white"
+            android:layout_below="@+id/appimage"/>
+    <View android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_below="@+id/uninstall"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"
+          android:layout_marginTop="20dp"
+          android:background="#e1e1e1"
+          android:id="@+id/divider1"/>
+    <com.aatmanirbhar.bharat.TypefacedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/otherappsHead"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            app:typeface="@string/Calibri"
+            android:layout_below="@+id/divider1"
+            android:textSize="20sp"
+            android:text="Indian Alternatives"/>
+    <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/otherappsHead"
+            android:layout_marginTop="10dp"
+            android:id="@+id/replaceList"/>
+    <View android:layout_width="match_parent"
+          android:layout_height="8dp"
+          android:layout_below="@+id/replaceList"
+          android:layout_marginTop="20dp"
+          android:background="#ededed"
+          android:id="@+id/divider2"/>
+
+</RelativeLayout>
